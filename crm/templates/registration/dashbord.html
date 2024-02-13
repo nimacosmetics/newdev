@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+
+
+{%block body%}
+<h2> Dashbord page</h2>
+<h2>Email:{{user.email}}</h2>
+<h2>Id:{{user.id}}</h2>
+<h2>password:{{user.password}}</h2>
+<button><a href="{% url 'logout'%}">Logout</a></button>
+{%endblock%}
